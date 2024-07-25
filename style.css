@@ -1,0 +1,24 @@
+h1{
+  text-align: center;
+  padding-top: 20%;
+  color: black;
+}
+body{
+  background-color: white;
+  font-family: cursive ;
+}
+#SIM{
+  color: green;
+  text-align: center;
+  margin-left: 45%;
+  font-family: cursive;
+  padding: 10px;
+  font-size: 25px;
+}
+#NAO{
+  color: red;
+  text-align: center;
+  font-family: cursive;
+  padding: 10px;
+  font-size: 25px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta séria</title>
+    <style>
+        h1{
+            text-align: center;
+            padding-top: 20%;
+            color: black;
+        }
+        body{
+            background-color: white;
+            font-family: cursive ;
+            position: relative;
+            overflow: hidden;
+        }
+        #SIM{
+            color: green;
+            text-align: center;
+            margin-left: 45%;
+            font-family: cursive;
+            padding: 10px;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+        #NAO{
+            color: red;
+            text-align: center;
+            font-family: cursive;
+            padding: 10px;
+            font-size: 25px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>E o cuzinho?</h1>
+    <button id=SIM onclick="show()">SIM</button>
+    <button id="NAO" onmouseover="leave()">NÃO</button>
+    <script>
+        function show(){
+            window.location.href = 'https://www.youtube.com/watch?v=qnaGs3qlnAs';   
+        }
+        function leave(){
+            const botaoNao = document.getElementById("NAO");
+            const maxX = window.innerWidth - botaoNao.clientWidth;
+            const maxY = window.innerHeight - botaoNao.clientHeight;
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+            botaoNao.style.left = `${x}px`;
+            botaoNao.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
